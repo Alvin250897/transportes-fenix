@@ -1,0 +1,6 @@
+-- Ya aplicado al proyecto Supabase:
+-- 1) fenix_quote_messages
+-- 2) fenix_quote_status_history
+-- 3) bucket fenix-media y políticas
+-- 4) protección para impedir que un cliente se eleve su propio rol.
+-- Este archivo es informativo; no es necesario volver a ejecutarlo.
