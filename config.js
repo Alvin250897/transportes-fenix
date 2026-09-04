@@ -4,3 +4,12 @@ window.FENIX_CONFIG = {
   MEDIA_BUCKET: 'fenix-media',
   SITE_URL: 'https://transportes-fenix.vercel.app'
 };
+window.addEventListener('load',()=>{
+  const s=document.createElement('script');
+  s.src='fenix-fix.js';
+  s.onload=()=>{
+    if(typeof fenixLoadCosts==='function') window.loadQuoteCosts=fenixLoadCosts;
+    if(typeof fenixFinance==='function') window.loadFinance=fenixFinance;
+  };
+  document.body.appendChild(s);
+});
